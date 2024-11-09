@@ -1,0 +1,61 @@
+nav,header,ul,li{
+    display: inline;
+    margin: 5px;
+    margin-left:  30px; ;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pop{
+    color: rosybrown;
+}
+.nago{
+    color: aquamarine;
+}
+
+.oumy{
+    background-color: aqua;
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    display: inline;
+    align-items: right;
+    gap: 30px;
+    height: 50px;
+    justify-content: center;
+}
+
+a{
+    position: relative;
+    cursor: pointer;
+    color:grey;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    transition: color 0.25s;
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: black;
+    scale: 1 0;
+    z-index: -1;
+    transition: 0.45s;
+    border-radius: 10px;
+
+}
+
+a:hover {
+    color: black;
+}
+a:hover {
+    scale: 1 1;
+}
